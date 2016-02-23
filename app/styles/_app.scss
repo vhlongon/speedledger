@@ -70,6 +70,9 @@
         i {
           transform: rotate(90deg);
         }
+        p{
+          padding-left: $container-padding;
+        }
       }
       i{
           float: right;
