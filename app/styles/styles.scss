@@ -1,0 +1,20 @@
+//For the sake a brevity I have put together some partials that
+//otherwise would be contained in specific files
+
+//all vendor related partials
+@import "normalize";
+
+//partials
+// other partials would be function , mixins, etc
+//basically everything that is not directly ouput to css
+@import 'variables';
+
+//base styles
+// other partials here wouöd be typography, helper classes, etc
+@import "base";
+
+//components styles
+@import "btn";
+
+//template parts styles
+@import 'app';

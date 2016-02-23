@@ -1,0 +1,43 @@
+// Usually I would have much more normalizing styles here, but this is just a
+// a small samle to show how I usually divide my projects and how I think
+// about css, always trying to modularize and split code that fills a specific
+// function to its own file
+
+/*Typography*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+
+}
+/*Basic styles*/
+h1 {
+  margin: h2 auto;
+  text-align: center;
+
+}
+
+h2 {
+  margin: 0;
+  line-height: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  li{
+    padding: 10px 0;
+  }
+}
+/*helper classes*/
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}

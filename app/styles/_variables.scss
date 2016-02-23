@@ -1,0 +1,35 @@
+/* Project variables */
+
+//Colors
+$light-red: #F05B4F;
+$mid-grey: #cccccc;
+$white: #ffffff;
+$black: #000;
+$dark-grey: #333;
+
+$accent-color: $light-red;
+$primary-text-color: $black;
+$secondary-text-color: $dark-grey;
+
+//border properties
+$border-radius: 4px;
+$default-border: 1px solid $mid-grey;
+
+//fonts
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+$font-family: 'Open Sans', sans-serif;
+
+$font-size-default: 16px;
+$font-size-small: 12px;
+$font-size-large: 18px;
+$font-size-x-large: 22px;
+$font-size-xx-large: 26px;
+
+
+//spacing and measuraments
+$container-max-width: 480px;
+$container-padding: 20px;
+$container-min-height: 400px;
+
+$container-pseudo-height: 10px;
