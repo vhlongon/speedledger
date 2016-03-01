@@ -1,11 +1,14 @@
-// let test = 'Hi, from ES2015 with Babel';
-// console.log(test);
+import componentFactory from './Component';
 
-import loadAjax from './ajax';
+// Using the Component as a factory to be able to pass parameters to
+// the Component Class from an instance (SpeedLedger)
+let options = {
+    data: 'data/data.json',
+    templateRoot: 'component-root',
+    templateElement: '.component'
+  },
+  Component = componentFactory(options),
+  SpeedLedger = new Component();
 
-loadAjax(`data/data.json`,
-  (xhr) => {
-    let data = JSON.parse(xhr.responseText);
-    console.log(data);
-  }
-);
+// All methods of the component class are available for the instance here
+SpeedLedger.init();

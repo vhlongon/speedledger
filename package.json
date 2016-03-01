@@ -43,5 +43,8 @@
     "run-sequence": "^0.3.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5"
   }
 }

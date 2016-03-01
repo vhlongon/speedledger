@@ -1,0 +1,25 @@
+<script id="component-root" type="text/x-handlebars-template">
+  <div class="entry">
+    <h2>{{title}}</h2>
+    {{#each users}}
+    <div class="user">
+      <ul>
+        <li>
+          Username: <b>{{usernmae}}</b>
+        </li>
+        <li>
+          User ID: <b>{{id}}</b>
+        </li>
+        <li>
+          Title: <b>{{title}}</b>
+        </li>
+        <li>
+          Body: <b>{{body}}</b>
+        </li>
+      </ul>
+    </div>
+    {{/each}}
+  </div>
+</script>
+
+<div class="component"></div>
