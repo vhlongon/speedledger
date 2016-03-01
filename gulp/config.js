@@ -40,6 +40,12 @@ export default {
 	prodDest: 'dist/media'
   },
 
+  data: {
+  src: 'app/data/**/*',
+  dest: 'build/data',
+  prodDest: 'dist/data'
+  },
+
   fonts: {
 	src: ['app/fonts/**/*'],
 	dest: 'build/fonts',
