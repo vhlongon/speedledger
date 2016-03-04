@@ -65,10 +65,11 @@
       border-bottom: $default-border;
       padding: $container-padding;
       font-size: $font-size-large;
+      text-align: left;
       &.active{
-        background-color: darken($white, 4);
+        background-color: darken($white, 10);
         i {
-          transform: rotate(90deg);
+          // transform: rotate(90deg);
         }
         p{
           padding-left: $container-padding;
@@ -76,8 +77,8 @@
       }
       i{
           float: right;
-          font-size: $font-size-x-large;
-
+          font-size: $font-size-large;
+          color: darken($mid-grey, 20);
       }
     }
   }

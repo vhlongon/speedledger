@@ -1,18 +1,30 @@
-{
-  "title": "Loading some data with es6 and Handlebars",
-  "users": [
-    {
-      "username": "Jhon",
-      "id": 1,
-      "title": "Ipsum dolor amet ham hock salami doner fatback",
-      "body": "Corned beef brisket alcatra landjaeger biltong shoulder, pork belly tongue t-bone. Shoulder leberkas beef ribs pork loin cow. Flank boudin short loin pork loin doner porchetta pork fatback ribeye ham hock picanha pork chop tenderloin. "
-    },
-    {
-      "username": "Mary",
-      "id": 2,
-      "title": "Biltong strip steak kevin, pork chop picanha corned beef short ribs drumstick beef ribs.",
-      "body": "Doner shoulder bresaola, pancetta tenderloin cow cupim jowl ham hock kevin brisket. Beef pig capicola, drumstick venison shoulder sausage beef ribs salami. Hamburger tail drumstick ham hock, kevin leberkas prosciutto cupim. Meatball pork loin kielbasa ground round."
-    }
-  ]
-
-}
+[
+  {
+    "type": "RUT",
+    "paymentDate": "2015-01-02",
+    "expirationDate": "2015-02-10",
+    "workCost": 1900,
+    "taxDeduction": 300
+  },
+  {
+    "type": "ROT",
+    "paymentDate": "2015-01-03",
+    "expirationDate": "2015-05-10",
+    "workCost": 2100,
+    "taxDeduction": 500
+  },
+  {
+    "type": "RUT",
+    "paymentDate": "2015-01-12",
+    "expirationDate": "2015-02-16",
+    "workCost": 800,
+    "taxDeduction": 200
+  },
+  {
+    "type": "ROT",
+    "paymentDate": "2015-01-19",
+    "expirationDate": "2015-02-21",
+    "workCost": 3000,
+    "taxDeduction": 700
+  }
+]

@@ -11,17 +11,24 @@
 
 body {
   font-family: $font-family;
+  background-color: $light-grey;
+  color: darken($mid-grey, 20);
 
+}
+
+section {
+  text-align: center;
+  margin:  4em auto;
 }
 /*Basic styles*/
 h1 {
-  margin: h2 auto;
+  margin: 2em auto;
   text-align: center;
 
 }
 
 h2 {
-  margin: 0;
+  margin: 0 0 1em 0;
   line-height: 1;
 }
 

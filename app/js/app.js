@@ -3,9 +3,10 @@ import componentFactory from './Component';
 // Using the Component as a factory to be able to pass parameters to
 // the Component Class from an instance (SpeedLedger)
 let options = {
-    data: 'data/data.json',
+    dataUrl: 'data/data.json',
     templateRoot: 'component-root',
-    templateElement: '.component'
+    templateElement: '.component',
+    sortBy: 'type'
   },
   Component = componentFactory(options),
   SpeedLedger = new Component();

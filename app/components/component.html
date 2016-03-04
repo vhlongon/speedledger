@@ -1,25 +1,51 @@
+<section class="component-wrapper">
+  <h2>@@title</h2>
+  <div class="component"></div>
+</section>
+
 <script id="component-root" type="text/x-handlebars-template">
-  <div class="entry">
-    <h2>{{title}}</h2>
-    {{#each users}}
-    <div class="user">
-      <ul>
+  <div class="component-content">
+    {{#each this}}
+    <div class="component__item">
+      <h3 class="component__item-title">{{this.type}}</h3>
+      <ul class="component__item-list-titles">
         <li>
-          Username: <b>{{usernmae}}</b>
+          <span>Betaldatum</span>
         </li>
         <li>
-          User ID: <b>{{id}}</b>
+          <span>Förfallodatum</span>
         </li>
         <li>
-          Title: <b>{{title}}</b>
+          <span>Arbetskostnad</span>
         </li>
         <li>
-          Body: <b>{{body}}</b>
+          <span>Skattavdrag</span>
+        </li>
+        <li>
+          <span>Totalkostnad</span>
         </li>
       </ul>
+      {{#each this}}
+        <ul class="component__item-list-row">
+          <li>
+            <span>{{paymentDate}}</span>
+          </li>
+          <li>
+            <span>{{expirationDate}}</span>
+          </li>
+          <li>
+            <span>{{workCost}}</span>
+          </li>
+          <li>
+            <span>{{taxDeduction}}</span>
+          </li>
+          <li>
+            <span>{{subtract workCost minus=taxDeduction}}</span>
+          </li>
+          
+        </ul>
+      {{/each}}
     </div>
     {{/each}}
   </div>
 </script>
-
-<div class="component"></div>
