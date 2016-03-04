@@ -1,4 +1,4 @@
-# A semple project
+# A simple project
 
 
 ## Setup project
