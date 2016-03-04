@@ -7,6 +7,7 @@
   <div class="component-content">
     {{#each this}}
     <div class="component__item">
+      {{#ifvalue this.type value="ROT"}}BUYA{{/ifvalue}}
       <h3 class="component__item-title">{{this.type}}</h3>
       <ul class="component__item-list-titles">
         <li>
@@ -42,7 +43,7 @@
           <li>
             <span>{{subtract workCost minus=taxDeduction}}</span>
           </li>
-          
+
         </ul>
       {{/each}}
     </div>
