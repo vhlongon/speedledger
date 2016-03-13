@@ -32,26 +32,37 @@ export default (options) => class Component {
       context = this.groupBy(data, this.settings.sortBy),
       html    = template(context);
     templateElement[0].innerHTML = html;
-
+    console.log(context);
     this.bindEvents();
   }
 
   groupBy(data, property) {
-    //convert Json data object to array
-    return data.reduce(function groupBy(memo, x) {
-      if (!memo[x[property]]) {
-        memo[x[property]] = [];
+    // convert Json data object to array using reduce
+    // first parameter is a reducer
+      // acc - accumulator - first argument on a reducer function returns
+      // the result (object, array, etc) from the latest iteration
+      // item - current item of the array being reduced
+    // second argument is the initial value - in this case an empty object
+    return data.reduce(function groupBy(acc, item) {
+      // if the accumulator object does not contain a object that
+      // contains the property we are are looking for
+      // we create an item on the acc and set the property on in to an empty array
+      // to hold other objects that share the same property
+      if (!acc[item[property]]) {
+        acc[item[property]] = [];
       }
-      memo[x[property]].push(x);
-      memo[x[property]].type = x[property];
+      // here we push the item the property with a certain value with other objects that also
+      // share the same value and create a type property and set it to the value of the
+      // property we are grouping the objects by, so it is easy to sort them later on
+      acc[item[property]].push(item);
+      acc[item[property]].type = item[property];
 
-      return memo;
+      return acc;
     }, {});
   }
 
   bindEvents() {
     let rows = document.querySelectorAll('.component__item-list-row');
-    console.log(rows);
     for (let i = 0; i < rows.length; i++) {
       rows[i].addEventListener('click', function onClick(e) {
         e.target.classList.toggle('toggled');
